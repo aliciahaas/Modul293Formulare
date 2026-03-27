@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einfaches Formular</title>
+</head>
+<body>
+    <main>
+
+        <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+            <div>
+                <label>Anrede *</label>
+                <input type="radio" name="Anrede" id="Frau" value="Frau" required>
+                <label for="Frau">Frau</label>
+                <input type="radio" name="Anrede" id="Herr" value="Herr" required>
+                <label for="Herr">Herr</label>
+                <input type="radio" name="Anrede" id="Anderes" value="Anderes" required>
+                <label for="Anderes">Anderes</label>
+            </div>
+            <div>
+                <label>Vorname*</label>
+                <input type="text" name="vorname" id="vorname" maxlength="100" required>
+            </div>
+            <div>
+                <label>Nachname*</label>
+                <input type="text" name="nachname" id="nachname" maxlength="100" required>
+            </div>
+            <div>
+                <label>Strasse*</label>
+                <input type="text" name="strasse" id="strasse" maxlength="100" required>
+            </div>
+             <div>
+                <label>PLZ*</label>
+                <input type="number" name="plz" id="plz" minlength="1000" maxlength="9999" required>
+                <label>Ort*</label>
+                <input type="text" name="ort" id="ort" maxlength="100" required>
+            </div>
+            <div>
+                <label>E-Mail*</label>
+                <input type="email" name="email" id="email"required>
+            </div>
+            <div>
+                <input type="submit" value="Senden" >
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
